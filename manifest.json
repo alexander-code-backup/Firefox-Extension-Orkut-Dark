@@ -1,0 +1,21 @@
+{
+  "description": "Tenha uma nova experiência no Orkut",
+  "manifest_version": 2,
+  "name": "Orkut Redesign Dark",
+  "author": "Johnendz",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.orkut.br.com/*"],
+      "css":["style.css"],
+      "run_at": "document_start"
+    }
+  ],
+  
+  "icons": {
+      "32": "icons/32.png",
+      "64": "icons/64.png",
+      "128": "icons/128.png"
+  }
+}
