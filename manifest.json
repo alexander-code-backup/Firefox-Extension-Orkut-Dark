@@ -1,14 +1,14 @@
 {
-  "description": "Tenha uma nova experiência no Orkut",
+  "description": "O seu queridinho Orkut com um novo visual no Tema Escuro.",
   "manifest_version": 2,
   "name": "Orkut Redesign Dark",
   "author": "Johnendz",
-  "version": "1.2",
+  "version": "1.3",
 
   "content_scripts": [
     {
       "matches": ["*://www.orkut.br.com/*"],
-      "css":["style.css"],
+      "css":["style.minified.css"],
       "run_at": "document_start"
     }
   ],

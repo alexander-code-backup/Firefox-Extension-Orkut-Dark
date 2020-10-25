@@ -20,7 +20,7 @@ a {
 }
 /* estilo da pagina de login */
 
-body, .login-desc {
+body, .login-desc, .panel {
 	background-color: var(--color-background) !important;
 }
 .login .container > .footer {
@@ -56,8 +56,8 @@ body, .login-desc {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.alert-login .panel,  .alert-login .panel .alerta {
-	background-color: var(--color-background-dark) !important;
+.alert-login .panel, .alerta {
+	background: var(--color-background-dark) !important;
 }
 .alerta p:not( b ) {
 	color: var(--color-text) !important;
@@ -124,19 +124,19 @@ body, .login-desc {
 	background-color: #d05d98 !important;
 	border: none !important;
 }
-.nav > li.menu-form input, .nav > li.menu-form input::placeholder, .col-sm-2 .panel-home .menu2 b, .col-sm-7 .panel-home .pd-tb-10 h3, .sugestao .suggestions a, .col-sm-3 .amigos {
+.nav > li.menu-form input, .nav > li.menu-form input::placeholder, .col-sm-7 .panel-home .pd-tb-10 h3, .sugestao .suggestions a, .amigos, .col-sm-2 .panel-home .menu2 b, .col-md-2 .panel-home .menu2 b, .col-md-7 .panel-home .pd-tb-10 h3 {
 	color: var(--color-text) !important;
 }
 body > .container {
 	padding-top: 10px;
 }
 ul.menu-left{
-	background-color: var(--color-background) !important;
+	background: var(--color-background) !important;
 }
-.col-sm-2 .panel-home .m-separator, .col-sm-2 .panel-home .status {
+.m-separator, .md-separator {
 	display: none;
 }
-.col-sm-2 .panel-home a {
+.col-sm-2 .panel-home a, .col-md-2 .panel-home a {
 	font-weight: bold;
 	color: #d05d98 !important;
 }
@@ -148,11 +148,11 @@ ul.menu-left{
 	background: var(--color-background) !important;
 	padding: 0 !important;
 }
-.col-sm-7 .panel, .col-sm-3 .panel, .col-sm-2 .panel-home {
+.col-sm-7 .panel, .col-sm-3 .panel, .col-sm-2 .panel-home, .col-md-2 .panel-home, .col-md-7 .panel, .col-md-3 .panel {
 	background-color: var(--color-background) !important;
 	border: 1px solid rgba(196,100,196,1);
 }
-.col-sm-3 .panel .btn-footer {
+.col-sm-3 .panel .btn-footer, .col-md-3 .panel .btn-footer {
 	border-top: inherit !important;
 }
 .no-friend {
@@ -170,14 +170,15 @@ ul.menu-left{
 .amigo-area.m3 {
     margin-left: 0px !important;
 }
-.btn-orkut-2 {
+.btn-orkut-2, .btn-orkut-gg, .btn-orkut {
 	background: #d05d98 !important;
 	color: var(--color-text) !important;
 	padding: 5px !important;
 	text-decoration: none !important;
 	border: inherit !important;
+	box-shadow: inherit !important;
 }
-.btn-orkut-2:hover {
+.btn-orkut-2:hover, .btn-orkut-gg:hover, .btn-orkut:hover {
 	color: black !important;
 }
 .sugestao.owl-carousel .owl-stage .owl-item {
@@ -188,7 +189,7 @@ ul.menu-left{
 	background: var(--color-background-dark) !important;
 	border-radius: 5px;
 }
-.amigo-area {
+.amigo-area, .friend-list-area table {
 	background: var(--color-background-dark) !important;
 	border-radius: 5px;
 	border: 1px solid #d05d98;
@@ -242,7 +243,7 @@ ul.menu-left{
 blockquote {
     border-left: 5px solid var(--color-background-shadow) !important;
 }
-.panel-cmmfeed .panel-body .topic .img-scrapbook {
+.img-scrapbook, .panel-cmmfeed .cmm-avatar {
 	background: inherit !important;
 	border: inherit !important;
 	border-radius: 50%;
@@ -255,7 +256,7 @@ footer .container {
 	background-size: 14px;
 	background-repeat: no-repeat;
 	background-position: center;
-	margin-right: 5px;
+	margin-right: 7px;
 	padding-left: 4px !important;
 }
 .logo-footer img {
@@ -267,13 +268,128 @@ footer .container {
 .infinite-scroll-request .fa {
 	color: var(--color-text) !important;
 }
-.panel-feed ul.nav.nav-tabs li.active a {
+.panel-feed ul.nav.nav-tabs li.active a, .editar-perfil ul.nav.nav-tabs li.active a, .perfil ul.nav.nav-tabs li.active a {
 	background: var(--color-background-dark) !important;
 }
-.panel-feed ul.nav.nav-tabs li a {
-	background: var(--color-background-shadow) !important;
-}
 .editar-perfil ul.nav.nav-tabs li a, .perfil ul.nav.nav-tabs li a {
+	background: var(--color-background-shadow) !important;
 	border-radius: 5px !important;
 	color: var(--color-textdark) !important;
+	border: inherit !important;	
+}
+.amigos a {
+    color: #0a6a9d !important;
+}
+.panel-friends {
+	background: var(--color-background-dark) !important;
+	border: 1px solid #d05d98;
+}
+.panel-friends .avatar img {
+	border-radius: 5px;
+}
+/* estilo da pagina de perfil */
+
+.breadcrumb a {
+    color: #6d90a3 !important;
+}
+.perfil-status {
+    border: inherit !important;
+	box-shadow: 1px 1px 1px 1px rgb(196, 100, 196);
+}
+.border-perfil {
+    border-bottom: inherit !important;
+    border-top: inherit !important;
+}
+.perfil-avaliacao-posicao {
+	background-color: inherit !important;
+}
+.editar-perfil ul.nav.nav-tabs, .perfil ul.nav.nav-tabs {
+	border-bottom: inherit !important;
+}
+.profile-page .perfil ul.nav.nav-tabs li a {
+	border: inherit !important;
+	padding: 10px 15px !important;
+}
+.profile-page .perfil ul.nav.nav-tabs li:nth-child(1):nth-last-child(1){
+	text-align: center;
+	margin: auto;
+    width: 99%;
+}
+.profile-page .perfil ul.nav.nav-tabs li:nth-child(1):nth-last-child(2),
+.profile-page .perfil ul.nav.nav-tabs li:nth-child(2):nth-last-child(1){
+	text-align: center;
+	margin: auto;
+    width: 49.50%;
+}
+.profile-page .perfil ul.nav.nav-tabs li:nth-child(1):nth-last-child(3),
+.profile-page .perfil ul.nav.nav-tabs li:nth-child(2):nth-last-child(2),
+.profile-page .perfil ul.nav.nav-tabs li:nth-child(3):nth-last-child(1) {
+	text-align: center;
+	margin: auto;
+    width: 33%;
+}
+table.table.table-perfil tr:nth-child(2n+1), table.table.table-perfil tr:nth-child(2n) {
+	background: var(--color-background) !important;
+}
+table.table.table-pedidos-amigos tr {
+    background: var(--color-background) !important;
+}
+table.table.table-pedidos-amigos tr td {
+    border-bottom: inherit !important;
+}
+.img-avatar {
+	background: inherit !important;
+	border: inherit !important;
+	border-radius: 50%;
+}
+.profile-page ~ .panel b {
+  color: #d05d98 !important;
+}
+ul.menu-left, ul.menu-left li {
+	border: inherit !important;
+}
+.link-perfil {
+    color: #da2747 !important;
+    text-decoration: none !important;
+}
+.criar-album, .bg-orkut, .media.scrapbook, .lista-grupo {
+    background: var(--color-background) !important;
+	border: inherit !important;
+}
+textarea, input {
+	resize: none; 
+	border: none;
+	border-radius: 20px;
+	padding: 10px;
+	color: var(--color-text) !important;
+	margin-bottom: 10px;
+	background: var(--color-background-shadow) !important;
+	outline: none;
+	filter: none;
+}
+.criar-album input, input#youtube_url {
+	width: 533px;
+}
+input#assunto {
+	width: 420px;
+}
+.panel b, .panel p, .panel-home .row, .media.scrapbook, .table-perfil th {
+	color: var(--color-textdark) !important;
+}
+.img-thumbnail {
+	background: inherit !important;
+	border: inherit !important;
+	border-radius: 10px;
+}
+.criar-album table tr td, .panel-body h3 {
+	color: var(--color-text) !important;
+}
+.fileupload-buttonbar .progress {
+    margin-bottom: inherit !important;
+}
+.template-upload .progress {
+	display:none !important;
+}
+.a-foto {
+    margin-bottom: 15px !important;
 }
